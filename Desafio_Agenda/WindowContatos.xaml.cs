@@ -10,34 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Desafio_Agenda
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para WindowContatos.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class WindowContatos : Window
     {
-        public MainWindow()
+        public WindowContatos()
         {
             InitializeComponent();
-        }
-
-        private void BtnContato_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void BtnCompromisso_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void BtnFinalizar_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
