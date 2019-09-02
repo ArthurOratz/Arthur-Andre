@@ -21,6 +21,7 @@ namespace Desafio_Agenda
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<Contato> Contatos { get; set; }
+        public virtual DbSet<Compromisso> Compromissos { get; set; }
     }
 
     //public class MyEntity
