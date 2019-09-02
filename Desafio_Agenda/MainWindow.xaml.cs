@@ -27,12 +27,13 @@ namespace Desafio_Agenda
 
         private void BtnContato_Click(object sender, RoutedEventArgs e)
         {
-
+           
         }
 
         private void BtnCompromisso_Click(object sender, RoutedEventArgs e)
         {
-
+            WindowCompromissos windowCompromissos = new WindowCompromissos();
+            windowCompromissos.Show();
         }
 
         private void BtnFinalizar_Click(object sender, RoutedEventArgs e)
