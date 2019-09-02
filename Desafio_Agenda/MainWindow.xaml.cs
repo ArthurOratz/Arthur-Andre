@@ -27,7 +27,7 @@ namespace Desafio_Agenda
 
         private void BtnContato_Click(object sender, RoutedEventArgs e)
         {
-           
+
         }
 
         private void BtnCompromisso_Click(object sender, RoutedEventArgs e)
