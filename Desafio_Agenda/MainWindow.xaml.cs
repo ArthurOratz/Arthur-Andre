@@ -27,7 +27,8 @@ namespace Desafio_Agenda
 
         private void BtnContato_Click(object sender, RoutedEventArgs e)
         {
-
+            WindowContatos janelaContatos = new WindowContatos();
+            janelaContatos.Show();
         }
 
         private void BtnCompromisso_Click(object sender, RoutedEventArgs e)

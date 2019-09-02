@@ -6,7 +6,37 @@
         xmlns:local="clr-namespace:Desafio_Agenda"
         mc:Ignorable="d"
         Title="WindowContatos" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="10,10,10,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="1" Margin="10">Nome:</TextBlock>
+        <TextBlock Grid.Row="2" Margin="10">Sobrenome:</TextBlock>
+        <TextBlock Grid.Row="3" Margin="10">Data de Nascimento:</TextBlock>
+        <TextBlock Grid.Row="4" Margin="10">Telefone:</TextBlock>
+        <TextBlock Grid.Row="5" Margin="10">Compromissos:</TextBlock>
+        <Button x:Name="BtnSalvar" Content="Salvar" Grid.Row="7" Margin="10" Click="BtnSalvar_Click"/>
+        <Button x:Name="BtnCancelar" Content="Cancelar" Grid.Row="7" Grid.Column="1" Margin="10" HorizontalAlignment="Right" Click="BtnCancelar_Click"/>
+        <DatePicker Grid.Column="1" Grid.Row="3" Margin="10"/>
+
+
+
+        <StackPanel Grid.Row="0" Margin="5">
+            <Button x:Name="BtnAdicionar" Content="Adicionar Contato" Height="auto" Click="BtnAdicionar_Click" Margin="10"/>
+            <Button x:Name="BtnRemover" Content="Remover Contato" Height="auto" Click="BtnRemover_Click" Margin="10"/>
+
+        </StackPanel>
     </Grid>
 </Window>
