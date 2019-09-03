@@ -38,11 +38,12 @@
 
         <TextBlock Grid.Row="5" Margin="10">Pessoas:</TextBlock>
         
-        <ListView Grid.ColumnSpan="2" Grid.Row="6" ItemsSource="{Binding Path=PessoasViewModel.Pessoas}"
+        <ListView Grid.Column="1" Grid.Row="6" ItemsSource="{Binding Path=PessoasViewModel.Pessoas}"
                   DisplayMemberPath="Nome">
         </ListView>
-        
-        
+        <Button x:Name="BtnAdicionarPessoa" Content="Adicionar Pessoa" Grid.Row="6" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" Click="BtnAdicionarPessoa_Click"/>
+
+
         <StackPanel Grid.Row="0">
             <Button x:Name="BtnAdicionar" Content="Adicionar Compromisso" Margin="10" Click="BtnAdicionar_Click"/>
             <Button x:Name="BtnRemover" Content="Remover Compromisso" Margin="10" Click="BtnRemover_Click"/>

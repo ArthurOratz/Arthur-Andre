@@ -20,9 +20,9 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Button x:Name="BtnContato" Content="Contato" Grid.Row="1" Click="BtnContato_Click"/>
-        <Button x:Name="BtnCompromisso" Content="Compromissos" Grid.Row="3" Click="BtnCompromisso_Click"/>
-        <Button x:Name="BtnFinalizar" Content="Finalizar Aplicação" Grid.Row="5" Click="BtnFinalizar_Click"/>
+        <Button x:Name="BtnContato" Content="Contato" Grid.Row="1" Click="BtnContato_Click" Margin="10"/>
+        <Button x:Name="BtnCompromisso" Content="Compromissos" Grid.Row="3" Click="BtnCompromisso_Click" Margin="10"/>
+        <Button x:Name="BtnFinalizar" Content="Finalizar Aplicação" Grid.Row="5" Click="BtnFinalizar_Click" Margin="10"/>
 
 
 

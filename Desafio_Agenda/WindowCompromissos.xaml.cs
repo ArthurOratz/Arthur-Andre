@@ -45,5 +45,10 @@ namespace Desafio_Agenda
         {
             this.Close();
         }
+
+        private void BtnAdicionarPessoa_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
