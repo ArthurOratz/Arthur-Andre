@@ -27,6 +27,6 @@ namespace Desafio_Agenda
         public DateTime dataFim { get; set; }
 
         //[InverseProperty("Compromissos")]
-        //public IList<Contato> Contatos { get; set; }
+        public IList<Contato> Contatos { get; set; }
     }
 }

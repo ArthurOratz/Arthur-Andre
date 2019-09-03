@@ -16,8 +16,10 @@ namespace Desafio_Agenda.ViewModel
         public ViewModelContatos()
         {
             context = new ModelAgenda();
-            this.contatos = new ObservableCollection<Contato>();
+            this.contatos = new ObservableCollection<Contato>(context.Contatos.ToList());
+            this.contatoSelecionado = context.Contatos.FirstOrDefault();
         }
+
         public void adicionar()
         {
             Contato c = new Contato();
@@ -25,6 +27,7 @@ namespace Desafio_Agenda.ViewModel
             this.context.Contatos.Add(c);
             this.contatoSelecionado = c;
         }
+
         public void Salvar()
         {
             this.context.SaveChanges();

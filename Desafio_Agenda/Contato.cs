@@ -27,7 +27,7 @@ namespace Desafio_Agenda
         public String Telefone { get; set; }
 
         //[InverseProperty("Contatos")]
-        //public IList<Compromisso> Compromissos { get; set; }
+        public IList<Compromisso> Compromissos { get; set; }
 
        
 
