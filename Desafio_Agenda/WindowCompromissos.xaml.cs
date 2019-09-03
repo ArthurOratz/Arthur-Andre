@@ -25,5 +25,25 @@ namespace Desafio_Agenda
         {
             InitializeComponent();
         }
+
+        private void BtnAdicionar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnRemover_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnSalvar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

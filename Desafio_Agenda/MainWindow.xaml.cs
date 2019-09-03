@@ -39,7 +39,7 @@ namespace Desafio_Agenda
 
         private void BtnFinalizar_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
     }
 }
