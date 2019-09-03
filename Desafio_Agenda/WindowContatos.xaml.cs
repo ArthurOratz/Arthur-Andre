@@ -19,12 +19,12 @@ namespace Desafio_Agenda
     /// </summary>
     public partial class WindowContatos : Window
     {
-        public ViewModel.ModelContatos ModelContatos { get; set; }
+        public ViewModel.ViewModelContatos ModelContatos { get; set; }
 
         public WindowContatos()
         {
             InitializeComponent();
-            this.ModelContatos = new ViewModel.ModelContatos();
+            this.ModelContatos = new ViewModel.ViewModelContatos();
             this.DataContext = this;
         }
 

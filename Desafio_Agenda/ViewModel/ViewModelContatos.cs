@@ -7,18 +7,16 @@ using System.Threading.Tasks;
 
 namespace Desafio_Agenda.ViewModel
 {
-    public class ModelContatos
+    public class ViewModelContatos
     {
         public ModelAgenda context { get; set; }
         public ObservableCollection<Contato> contatos { get; set; }
         public Contato contatoSelecionado { get; set; }
 
-        public ModelContatos()
+        public ViewModelContatos()
         {
             context = new ModelAgenda();
-            this.contatos = new ObservableCollection<Contato>(context.Contatos.ToList());
-            this.contatoSelecionado = context.Contatos.FirstOrDefault();
-
+            this.contatos = new ObservableCollection<Contato>();
         }
         public void adicionar()
         {

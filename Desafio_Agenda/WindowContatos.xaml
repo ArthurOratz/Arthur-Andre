@@ -23,12 +23,12 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock Grid.Row="1" Grid.Column="0" Margin="10">Nome:</TextBlock>
-        <TextBox x:Name="txtnome" Grid.Column="1" Grid.Row="1" Text="{Binding Path=ModelContatos.contatoSelecionado.Nome}"></TextBox>
+        <TextBox x:Name="txtnome" Grid.Column="1" Grid.Row="1" Text="{Binding Path=Nome}"></TextBox>
         <TextBlock Grid.Row="2" Margin="10">Sobrenome:</TextBlock>
-        <TextBox x:Name="txtsobre" Grid.Column="1" Grid.Row="2" Text="{Binding Path=ModelContatos.contatoSelecionado.Sobrenome}"></TextBox>
+        <TextBox x:Name="txtsobre" Grid.Column="1" Grid.Row="2" Text="{Binding Path=Sobrenome}"></TextBox>
         <TextBlock Grid.Row="3" Margin="10">Data de Nascimento:</TextBlock>
         <TextBlock Grid.Row="4" Margin="10">Telefone:</TextBlock>
-        <TextBox x:Name="txttelefone" Grid.Column="1" Grid.Row="4" Text="{Binding Path=ModelContatos.contatoSelecionado.Telefone}"></TextBox>
+        <TextBox x:Name="txttelefone" Grid.Column="1" Grid.Row="4" Text="{Binding Path=Telefone}"></TextBox>
         <TextBlock Grid.Row="5" Margin="10">Compromissos:</TextBlock>
         <ListView Grid.ColumnSpan="2" Grid.Row="6"
                   DisplayMemberPath="Nome">
@@ -36,10 +36,9 @@
         </ListView>
         <Button x:Name="BtnSalvar" Content="Salvar" Grid.Row="7" Margin="10" Click="BtnSalvar_Click"/>
         <Button x:Name="BtnCancelar" Content="Cancelar" Grid.Row="7" Grid.Column="1" Margin="10" HorizontalAlignment="Right" Click="BtnCancelar_Click"/>
-        <DatePicker Grid.Column="1" Grid.Row="3" Margin="10"/>
-        <ListView Grid.Row="0" Grid.Column="1" ItemsSource="{Binding Path=ModelContaots.contatos}"
-                  DisplayMemberPath="Nome">
-
+        <DatePicker Grid.Column="1" Grid.Row="3" Margin="10" Text="{Binding Path=Data}"/>
+        <ListView Grid.Row="0" Grid.Column="1" ItemsSource="{Binding Path=ViewModelContatos.contatos}" DisplayMemberPath="Nome">
+        
         </ListView>
 
 

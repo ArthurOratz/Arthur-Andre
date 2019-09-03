@@ -64,7 +64,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ViewModel\ModelContatos.cs" />
+    <Compile Include="Migrations\201909030123161_contatos.cs" />
+    <Compile Include="Migrations\201909030123161_contatos.Designer.cs">
+      <DependentUpon>201909030123161_contatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ModelAgenda.cs" />
+    <Compile Include="ViewModel\ViewModelContatos.cs" />
     <Compile Include="WindowCompromissos.xaml.cs">
       <DependentUpon>WindowCompromissos.xaml</DependentUpon>
     </Compile>
@@ -95,7 +101,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModelAgenda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -109,6 +114,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\201909030123161_contatos.resx">
+      <DependentUpon>201909030123161_contatos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
