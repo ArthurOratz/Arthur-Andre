@@ -27,7 +27,8 @@ namespace Desafio_Agenda
 
         private void BtnContato_Click(object sender, RoutedEventArgs e)
         {
-
+            WindowContatos windowContatos = new WindowContatos();
+            windowContatos.Show();
         }
 
         private void BtnCompromisso_Click(object sender, RoutedEventArgs e)
@@ -38,7 +39,7 @@ namespace Desafio_Agenda
 
         private void BtnFinalizar_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
     }
 }
