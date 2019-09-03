@@ -12,11 +12,11 @@ namespace Desafio_Agenda
     {
         [Key]
         public int ID { get; set; }
-        [Required]
+        
         [MinLength(3)]
         [MaxLength(100)]
         public String Nome { get; set; }
-        [Required]
+       
         [MinLength(2)]
         [MaxLength(100)]
         public String Sobrenome { get; set; }
@@ -26,8 +26,10 @@ namespace Desafio_Agenda
         [MaxLength(20)]
         public String Telefone { get; set; }
 
-        [InverseProperty("Contatos")]
-        public IList<Compromisso> Compromissos { get; set; }
+        //[InverseProperty("Contatos")]
+        //public IList<Compromisso> Compromissos { get; set; }
+
+       
 
     }
 }
