@@ -19,9 +19,13 @@ namespace Desafio_Agenda
     /// </summary>
     public partial class WindowContatos : Window
     {
+        public ViewModel.ModelContatos ModelContatos { get; set; }
+
         public WindowContatos()
         {
             InitializeComponent();
+            this.ModelContatos = new ViewModel.ModelContatos();
+            this.DataContext = this;
         }
 
         private void Adicionar_Click(object sender, RoutedEventArgs e)
@@ -36,7 +40,7 @@ namespace Desafio_Agenda
 
         private void BtnAdicionar_Click(object sender, RoutedEventArgs e)
         {
-
+            this.ModelContatos.adicionar();
         }
 
         private void BtnRemover_Click(object sender, RoutedEventArgs e)
@@ -46,12 +50,12 @@ namespace Desafio_Agenda
 
         private void BtnSalvar_Click(object sender, RoutedEventArgs e)
         {
-
+            this.ModelContatos.Salvar();
         }
 
         private void BtnCancelar_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
     }
 }
