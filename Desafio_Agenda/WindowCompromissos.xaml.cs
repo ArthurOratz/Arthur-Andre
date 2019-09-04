@@ -19,16 +19,20 @@ namespace Desafio_Agenda
     /// </summary>
     public partial class WindowCompromissos : Window
     {
-        
+        public ViewModel.ViewModelContatos ModelContatos { get; set; }
+        public ViewModel.ViewModelCompromisso ModelCompromisso { get; set; }
 
         public WindowCompromissos()
         {
             InitializeComponent();
+            this.ModelContatos = new ViewModel.ViewModelContatos();
+            this.ModelCompromisso = new ViewModel.ViewModelCompromisso();
+            this.DataContext = this;
         }
 
         private void BtnAdicionar_Click(object sender, RoutedEventArgs e)
         {
-
+            this.ModelCompromisso.AdicionarCompromisso();
         }
 
         private void BtnRemover_Click(object sender, RoutedEventArgs e)
@@ -38,7 +42,7 @@ namespace Desafio_Agenda
 
         private void BtnSalvar_Click(object sender, RoutedEventArgs e)
         {
-
+            this.ModelCompromisso.Salvar();
         }
 
         private void BtnCancelar_Click(object sender, RoutedEventArgs e)

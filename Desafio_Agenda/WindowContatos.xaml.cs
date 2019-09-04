@@ -28,9 +28,6 @@ namespace Desafio_Agenda
             this.ModelContatos = new ViewModel.ViewModelContatos();
             this.DataContext = this;
         }
-
-       
-
         private void BtnAdicionar_Click(object sender, RoutedEventArgs e)
         {
             this.ModelContatos.adicionar();
@@ -38,7 +35,7 @@ namespace Desafio_Agenda
 
         private void BtnRemover_Click(object sender, RoutedEventArgs e)
         {
-
+            this.ModelContatos.Remover();
         }
 
         private void BtnSalvar_Click(object sender, RoutedEventArgs e)

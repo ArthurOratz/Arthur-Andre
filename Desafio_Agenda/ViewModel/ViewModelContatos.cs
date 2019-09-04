@@ -32,6 +32,14 @@ namespace Desafio_Agenda.ViewModel
         {
             this.context.SaveChanges();
         }
+        public void Remover()
+        {
+            if(this.contatoSelecionado.ID != 0)
+            {
+                this.context.Contatos.Remove(this.contatoSelecionado);
+            }
+            this.contatos.Remove(this.contatoSelecionado);
+        }
     }
     
 }
