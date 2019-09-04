@@ -28,13 +28,13 @@
                   DisplayMemberPath="Nome">
         </ListView>
         <TextBlock Grid.Column="0" Grid.Row="1" Margin="10">Titulo:</TextBlock>
-        <TextBox x:Name="txtTitulo" Grid.Column="1" Grid.Row="1"></TextBox>
+        <TextBox x:Name="txtTitulo" Grid.Column="1" Grid.Row="1" Text="{Binding Path=ModelCompromisso.compromissoSelecionado.Titulo}"></TextBox>
         <TextBlock Grid.Column="0" Grid.Row="2" Margin="10">Local:</TextBlock>
-        <TextBox x:Name="txtLocal" Grid.Column="1" Grid.Row="2"></TextBox>
+        <TextBox x:Name="txtLocal" Grid.Column="1" Grid.Row="2" Text="{Binding Path=ModelCompromisso.compromissoSelecionado.Local}"></TextBox>
         <TextBlock Grid.Column="0" Grid.Row="3" Margin="10">Data de Inicio:</TextBlock>
-        <DatePicker Grid.Column="1" Grid.Row="3" Margin="10"></DatePicker>
+        <DatePicker Grid.Column="1" Grid.Row="3" Margin="10" SelectedDate="{Binding Path=ModelCompromisso.compromissoSelecionado.dataInicio}"></DatePicker>
         <TextBlock Grid.Column="0" Grid.Row="4" Margin="10">Data de Fim:</TextBlock>
-        <DatePicker Grid.Column="1" Grid.Row="4" Margin="10"></DatePicker>
+        <DatePicker Grid.Column="1" Grid.Row="4" Margin="10" SelectedDate="{Binding Path=ModelCompromisso.compromissoSelecionado.dataFim}"></DatePicker>
 
         <TextBlock Grid.Row="5" Margin="10">Pessoas:</TextBlock>
 
@@ -52,7 +52,7 @@
         <Button x:Name="BtnSalvar" Content="Salvar" Grid.Row="7" Margin="10" Click="BtnSalvar_Click"/>
         <Button x:Name="BtnCancelar" Content="Cancelar" Grid.Row="7" Grid.Column="1" Margin="10" Click="BtnCancelar_Click" HorizontalAlignment="Right"/>
 
-        <ListView  Grid.Column="1">
+        <ListView  Grid.Column="1" ItemsSource="{Binding Path=ModelCompromisso.compromissos}" DisplayMemberPath="Nome" SelectedItem="{Binding Path=ModelCompromisso.compromissoSelecionado}">
             
         </ListView>
 
