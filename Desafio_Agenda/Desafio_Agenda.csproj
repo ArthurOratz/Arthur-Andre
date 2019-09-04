@@ -68,6 +68,10 @@
     <Compile Include="Migrations\201909032040244_agenda.Designer.cs">
       <DependentUpon>201909032040244_agenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909041745143_compromissos.cs" />
+    <Compile Include="Migrations\201909041745143_compromissos.Designer.cs">
+      <DependentUpon>201909041745143_compromissos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelAgenda.cs" />
     <Compile Include="ViewModel\ViewModelCompromisso.cs" />
@@ -117,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="Migrations\201909032040244_agenda.resx">
       <DependentUpon>201909032040244_agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909041745143_compromissos.resx">
+      <DependentUpon>201909041745143_compromissos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
