@@ -19,11 +19,13 @@ namespace Desafio_Agenda
     /// </summary>
     public partial class WindowCompromissos : Window
     {
-        
+        public ViewModel.ViewModelContatos ModelContatos { get; set; }
 
         public WindowCompromissos()
         {
             InitializeComponent();
+            this.ModelContatos = new ViewModel.ViewModelContatos();
+            this.DataContext = this;
         }
 
         private void BtnAdicionar_Click(object sender, RoutedEventArgs e)

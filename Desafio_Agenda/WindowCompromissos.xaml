@@ -37,9 +37,8 @@
         <DatePicker Grid.Column="1" Grid.Row="4" Margin="10"></DatePicker>
 
         <TextBlock Grid.Row="5" Margin="10">Pessoas:</TextBlock>
-        
-        <ListView Grid.Column="1" Grid.Row="6" ItemsSource="{Binding Path=PessoasViewModel.Pessoas}"
-                  DisplayMemberPath="Nome">
+
+        <ListView Grid.Column="1" Grid.Row="6" ItemsSource="{Binding Path=ModelContatos.contatos}" DisplayMemberPath="Nome" SelectedItem="{Binding Path=ModelContatos.contatoSelecionado}">
         </ListView>
         <Button x:Name="BtnAdicionarPessoa" Content="Adicionar Pessoa" Grid.Row="6" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" Click="BtnAdicionarPessoa_Click"/>
 
