@@ -39,7 +39,7 @@
         <Button x:Name="BtnSalvar" Content="Salvar" Grid.Row="7" Margin="10" Click="BtnSalvar_Click"/>
         <Button x:Name="BtnCancelar" Content="Cancelar" Grid.Row="7" Grid.Column="1" Margin="10" HorizontalAlignment="Right" Click="BtnCancelar_Click"/>
 
-        <DatePicker Grid.Column="1" Grid.Row="3" Margin="10" Text="{Binding Path=ModelContatos.contatoSelecionado.Data}"/>
+        <DatePicker Grid.Column="1" Grid.Row="3" Margin="10" SelectedDate="{Binding Path=ModelContatos.contatoSelecionado.Data}"/>
 
         <ListView Grid.Row="0" Grid.Column="1" ItemsSource="{Binding Path=ModelContatos.contatos}" DisplayMemberPath="Nome" SelectedItem="{Binding Path=ModelContatos.contatoSelecionado}">
         
